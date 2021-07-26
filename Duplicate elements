@@ -1,0 +1,47 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size=in.nextInt();
+        ArrayList<Integer>list1=new ArrayList<Integer>();
+        System.out.println("Enter the elements ");
+        for(int i=0;i<size;i++)
+        {
+            list1.add(in.nextInt());
+        }
+        System.out.println("User list is "+list1);
+        ArrayList<Integer>list2=new ArrayList<Integer>();
+        System.out.println("The duplicate elements are: ");
+        for(Integer k:list1)
+        {
+            if(list2.contains(k))
+            {
+                System.out.print(k+" ");
+            }
+            else
+            {
+                list2.add(k);
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
